@@ -11,3 +11,4 @@ div * {
 h1 {
 	color: green;
 }
+@include sprites($spritesheet-sprites);
