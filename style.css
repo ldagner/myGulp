@@ -1,0 +1,56 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* line 7, scss/sass/main.scss */
+div * {
+  transform: translateX(0%);
+  transition-delay: 0s;
+}
+
+/* line 11, scss/sass/main.scss */
+h1 {
+  color: red;
+}
+
+/* line 1, scss/sass/main-two.scss */
+a {
+  font-family: Arial;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+  background-image: url("example.png");
+  background-color: red;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
